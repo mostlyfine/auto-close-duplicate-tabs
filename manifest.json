@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Close Duplicate Tabs",
+  "version": "0.1.0",
+  "description": "When a new tab is opened, close the tab with the same URL.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
