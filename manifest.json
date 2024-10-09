@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Auto Close Duplicate Tabs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "When a new tab is opened, close the tab with the same URL.",
   "permissions": [
     "tabs",

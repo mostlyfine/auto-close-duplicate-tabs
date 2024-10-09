@@ -12,7 +12,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 
     const tabs = await chrome.tabs.query({});
     for (const existingTab of tabs) {
-      if (existingTab.id !== tabId) {
+      if (existingTab.url &&  existingTab.id !== tabId) {
         const normalizedExistingUrl = normalizeUrl(existingTab.url, config);
 
         if (normalizedNewUrl === normalizedExistingUrl) {
